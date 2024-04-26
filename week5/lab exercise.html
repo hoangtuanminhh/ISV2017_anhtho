@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sản-phẩm img {
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        .tên-sản-phẩm {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .giá-sản-phẩm {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .thông-tin {
+            display: none;
+        }
+
+        .sản-phẩm {
+            text-align: center;
+            cursor: pointer;
+            float: left;
+            display: grid;
+        }
+
+        .giá-sản-phẩm::before {
+            content: "- ";
+        }
+
+        .sản-phẩm:hover .thông-tin {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="sản-phẩm">
+            <img src="image/bún chả.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Bún chả</span>
+                <span class="giá-sản-phẩm">30.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/nem rán.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Nem rán</span>
+                <span class="giá-sản-phẩm">20.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/trà đào.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Trà đào</span>
+                <span class="giá-sản-phẩm">10.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/bún chả.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Bún chả</span>
+                <span class="giá-sản-phẩm">30.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/bún chả.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Bún chả</span>
+                <span class="giá-sản-phẩm">30.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/nem rán.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Nem rán</span>
+                <span class="giá-sản-phẩm">20.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/trà đào.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Trà đào</span>
+                <span class="giá-sản-phẩm">10.000đ</span>
+            </div>
+        </div>
+        <div class="sản-phẩm">
+            <img src="image/bún chả.jpg" alt="" style="width: 200px;">
+            <div class="thông-tin">
+                <span class="tên-sản-phẩm">Bún chả</span>
+                <span class="giá-sản-phẩm">30.000đ</span>
+            </div>
+        </div> 
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+div {
+  margin-left: 500px;
+  font-family: "Comic Sans MS";
+  background-color: yellow;
+  height: 25px;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Comic Sans MS";
+  margin-bottom: 3px;
+}
+
+.one {
+  width: 250px;
+  height: 25px;
+  font-weight: normal;
+  
+}
+
+.two {
+  color: red    ;
+  width: 400px;
+}
+
+.three {
+  font-family: "Times New Roman";
+  background-color: black;
+  color: white;
+  font-size: 23px;
+  font-style: italic;
+  width: 400px;
+  font-weight: normal;
+}
+.four {
+  width: 250px;
+  font-weight: normal;
+}
+.five {
+  width: 400px;
+  color: red;
+}
+.six {
+  width: 400px;
+  color: red;
+}
+.seven {
+  width: 250px;
+  height: 25px;
+  font-weight: normal;
+}

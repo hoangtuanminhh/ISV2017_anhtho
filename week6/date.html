@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates in month</title>
+    <style>
+        .txt {
+            text-align: right;
+        }
+    </style>
+    <script>
+        function Leap(n) {
+            return (n % 4 == 0 && n % 100 != 0) || n % 400 == 0;
+        }
+        function update() {
+            var year = parseInt(document.f.year.value);
+            var month = document.f.month.value;
+            var day = document.f.day.value;
+            switch (month) {
+                case '1':
+                case '3':
+                case '5':
+                case '7':
+                case '8':
+                case '10':
+                case '12':
+                    date = 31;
+                    break;
+                case '4':
+                case '6':
+                case '9':
+                case '11':
+                    date = 30;
+                    break;
+                case '2':
+                    date = Leap(year) ? 29 : 28;
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body onload='update()'>
+    <form name='f'>
+        <table style='border: 0; margin: auto'>
+            <tr>
+                <td colspan='2' style='text-align: center;'>
+                    <h2>DATES IN MONTH</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class='txt'>Year:</td>
+                <td class='input'><input type="number" name="year" id="year" placeholder='Enter a year' autofocus
+                        onblur='update()' min='1'>
+                </td>
+            </tr>
+            <tr>
+                <td class="txt">Month:</td>
+                <td class='input'><select name="month" id="month" onblur='update()'>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td class='txt'>Date:</td>
+                <td class='input'><input type="number" name="day" id="day" onblur='update()' readonly></td>
+            </tr>
+            <tr>
+                <td colspan='2' style='text-align: center;'><button type="submit" onclick='update()'>Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

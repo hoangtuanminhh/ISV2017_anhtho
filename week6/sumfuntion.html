@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="text/html, initial-scale=1.0" http-equiv='Content-Type'>
+    <title>Sum 2 numbers</title>
+    <script>
+        function cal() {
+            var txta = parseFloat(document.getElementById('txta').value);
+            var txtb = parseFloat(document.getElementById('txtb').value);
+            var result = txta + txtb
+            alert("Result:\n" + txta + " + " + txtb + " = " + result);
+        }
+    </script>
+    <style>
+        input,
+        button {
+            width: 150px;
+            height: 30px;
+            margin: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" name="txta" id="txta" placeholder='Enter number A'><br>
+    <input type="number" name="txtb" id="txtb" placeholder='Enter number B'><br>
+    <button type="submit" onclick='cal()'>Submit</button>
+</body>
+
+</html>
